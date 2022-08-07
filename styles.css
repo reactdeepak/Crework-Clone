@@ -1,0 +1,252 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
+:root {
+  --grey: #111;
+  --text-light-grey-2: #8f8f8f;
+  --white: #fff;
+  --primary: #ffac2f;
+  --secondary: #f88912;
+  --image-bg: #5151513d;
+  --off-white-2: #ffffff3d;
+  --black: #000;
+  --dull-bg-1: #463f3a;
+}
+body,
+html {
+  background-color: var(--grey);
+  color: var(--white);
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  position: relative;
+}
+body {
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+button,
+input {
+  outline: none;
+}
+
+.parent_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+}
+
+.nav_item_program,
+.nav_item_about {
+  font-size: 1.25rem;
+  padding: 0.6rem 2rem;
+}
+
+.hero_container {
+  margin: 1rem auto;
+  width: 90%;
+  text-align: center;
+}
+.hero_container_primary_text {
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  margin: 0 auto 1.5rem;
+  width: 65%;
+}
+.hero_container_secondary_text {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-light-grey-2);
+  font-weight: 400;
+}
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 1.5rem;
+  padding: 1.2rem 5rem;
+  border-radius: 4rem;
+  background-color: var(--white);
+  color: #000;
+}
+
+.hero_container_program {
+  margin-top: 7.5rem;
+}
+.hero_container_heading {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.card_items {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card {
+  border: 2px solid var(--dull-bg-1);
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero_container_label {
+  background-color: var(--off-white-2);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  bottom: 0;
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0.03em;
+  padding: 0.6rem 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.crework_span {
+  color: var(--primary);
+  font-size: 3rem;
+}
+.crework {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.footer_container {
+  background-color: var(--image-bg);
+  margin: 3rem 0 0;
+  width: 100%;
+}
+.footer_container_primary {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 0 1rem;
+  width: 90%;
+}
+
+.footer_container_secondary {
+  border-bottom: 1px solid var(--image-bg);
+  margin: 1rem auto 0;
+  width: 90%;
+}
+
+.footer_social_links {
+  align-items: center;
+  display: flex;
+}
+.footer_social {
+  height: auto;
+  object-fit: contain;
+  width: 1rem;
+  margin: 0 0.75rem;
+}
+.footer_copyright {
+  color: var(--text-light-grey-2);
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer_link {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 700px) {
+  .crework {
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .crework_span {
+    font-size: 2rem;
+  }
+  .nav_item_program {
+    display: none;
+  }
+  .nav_item_about {
+    font-size: 1rem;
+  }
+  .hero_container {
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: left;
+  }
+  .hero_container_primary_text {
+    font-size: 2.25rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: left;
+  }
+  .hero_container_secondary_text {
+    color: var(--text-light-grey-2);
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin: 0 1.5rem 1.5rem;
+  }
+  .btn {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 1.5rem 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+  .hero_container_program {
+    margin: 3rem 4rem 0rem 4rem;
+  }
+  .card_items {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .hero_container_heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .card {
+    border: 2px solid var(--dull-bg-1);
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 2rem 0;
+    padding: 2rem;
+    position: relative;
+  }
+  .footer_container {
+    margin: -1rem 0 0;
+  }
+}
